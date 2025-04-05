@@ -27,6 +27,7 @@ import AddInsurance from "./pages/VehiclesPages/AddInsurance";
 import FuelConsumption from "./pages/VehiclesPages/FuelConsumption";
 import MaintenanceSchedule from "./pages/VehiclesPages/MaintenanceSchedule";
 import VehicleReports from "./pages/VehiclesPages/VehicleReports";
+import AllVehicles from "./pages/VehiclesPages/AllVehicles";
 
 const App = () => {
   return (
@@ -54,6 +55,7 @@ const App = () => {
 
               {/* Vehicles Section  */}
               <Route path="/vehicles-dashboard" element={<VehicleManagment />} />
+              <Route path="/all-vehicles" element={<AllVehicles />} />
               <Route path="/add-vehicle" element={<AddVehicleForm/>} />
               <Route path="/vehicle-details/:id" element={<VehicleDetails />} />
               <Route path="/add-maintenance/:id" element={<AddMaintenanceRecord />} />

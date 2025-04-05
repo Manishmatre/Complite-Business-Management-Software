@@ -267,7 +267,7 @@ const VehicleManagment = () => {
                     Add New Vehicle
                   </Link>
                   <Link 
-                    to="/vehicles-dashboard" 
+                    to="/all-vehicles" 
                     className="px-5 py-2 bg-blue-500 hover:bg-blue-600 rounded-md text-white font-bold cursor-pointer text-center"
                   >
                     All Vehicles

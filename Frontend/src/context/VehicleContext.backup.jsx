@@ -6,11 +6,84 @@ const VehicleContext = createContext();
 // Custom hook to use the vehicle context
 export const useVehicle = () => useContext(VehicleContext);
 
-// Import vehicle data from JSON file
-import vehicleData from '../data/vehicles.json';
-
-// Use imported JSON data as initial vehicles
-const initialVehicles = vehicleData;
+// Sample vehicle data
+const initialVehicles = [
+  {
+    id: 1,
+    name: "Vehicle 1",
+    number: "ABC123",
+    type: "Car",
+    make: "Toyota",
+    model: "Camry",
+    year: "2020",
+    status: "Active",
+    insuranceExpireDate: "2025-04-01",
+    renewDate: "2025-03-25",
+    lastMaintenance: "2023-12-15",
+    nextMaintenance: "2024-06-15",
+    mileage: 45000,
+  },
+  {
+    id: 2,
+    name: "Vehicle 2",
+    number: "XYZ456",
+    type: "Truck",
+    make: "Ford",
+    model: "F-150",
+    year: "2021",
+    status: "Under Maintenance",
+    insuranceExpireDate: "2025-05-15",
+    renewDate: "2025-05-10",
+    lastMaintenance: "2024-01-20",
+    nextMaintenance: "2024-07-20",
+    mileage: 32000,
+  },
+  {
+    id: 3,
+    name: "Vehicle 3",
+    number: "DEF789",
+    type: "Van",
+    make: "Honda",
+    model: "Odyssey",
+    year: "2019",
+    status: "Active",
+    insuranceExpireDate: "2024-06-30",
+    renewDate: "2024-06-15",
+    lastMaintenance: "2024-02-10",
+    nextMaintenance: "2024-08-10",
+    mileage: 55000,
+  },
+  {
+    id: 4,
+    name: "Vehicle 4",
+    number: "GHI101",
+    type: "SUV",
+    make: "Chevrolet",
+    model: "Tahoe",
+    year: "2022",
+    status: "Active",
+    insuranceExpireDate: "2025-03-15",
+    renewDate: "2025-03-01",
+    lastMaintenance: "2024-03-05",
+    nextMaintenance: "2024-09-05",
+    mileage: 18000,
+  },
+  {
+    id: 5,
+    name: "Vehicle 5",
+    number: "JKL202",
+    type: "Car",
+    make: "Hyundai",
+    model: "Elantra",
+    year: "2021",
+    status: "Insurance Expired",
+    insuranceExpireDate: "2024-01-15",
+    renewDate: "2024-01-01",
+    lastMaintenance: "2023-11-20",
+    nextMaintenance: "2024-05-20",
+    mileage: 38000,
+  },
+];
 
 // Provider component
 export const VehicleProvider = ({ children }) => {
