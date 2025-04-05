@@ -1,0 +1,42 @@
+.dashboard {
+  padding: 20px;
+}
+
+.add-vehicle-button {
+  margin-bottom: 20px;
+}
+
+.filter-container {
+  margin-bottom: 20px;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+.search-input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.vehicle-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vehicle-table th, .vehicle-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.vehicle-table th {
+  background-color: #f2f2f2;
+}
+
+.add-vehicle-form div {
+  margin-bottom: 10px;
+}
+
+.add-vehicle-form label {
+  margin-right: 10px;
+}
